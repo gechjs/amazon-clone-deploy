@@ -1,0 +1,150 @@
+.categoryContainer {
+  position: relative;
+  margin: -20% 30px 0 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 1.5%;
+  row-gap: 5%;
+  place-items: center;
+  max-width: 100%;
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .categoryContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .categoryContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .categoryContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.CategoryCard,
+.SingleCategory {
+  /* width: 90%; */
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 320px;
+  width: 320px;
+  /* width: 100%; */
+}
+
+.CategoryCard:hover,
+.SingleCategory:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.CategoryCard img,
+.SingleCategory img {
+  max-width: 100%;
+  height: auto;
+}
+
+.multi img {
+  width: 100%;
+}
+
+.CategoryCard a,
+.SingleCategory a {
+  text-decoration: none;
+}
+
+.CategoryCard h2,
+.SingleCategory h2,
+.CategoryCard p,
+.SingleCategory p {
+  margin: 0 0 20px;
+  padding: 5px 10px 0px;
+}
+
+.CategoryCard h2,
+.SingleCategory h2 {
+  font-size: 20px;
+  color: #0f1111;
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
+
+.CategoryCard p,
+.SingleCategory p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #007185;
+}
+
+.imgContainer {
+  height: 76%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  margin-bottom: 5%;
+  gap: 5%;
+  padding: 0 10px;
+}
+
+.name {
+  font-size: 12px;
+  color: #0f1111;
+}
+
+@media (max-width: 768px) {
+  .CategoryCard,
+  .SingleCategory {
+    padding: 15px;
+  }
+
+  .CategoryCard h2,
+  .SingleCategory h2 {
+    font-size: 18px;
+  }
+
+  .CategoryCard p,
+  .SingleCategory p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .categoryContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .CategoryCard,
+  .SingleCategory {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 20px 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 250px;
+    width: 250px;
+  }
+  .CategoryCard h2,
+  .SingleCategory h2 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1740px) {
+  .categoryContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .CategoryCard,
+  .SingleCategory {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 300px;
+    width: 300px;
+  }
+}
