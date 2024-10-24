@@ -6,7 +6,7 @@ import Cart from "./pages/Cart/Cart";
 import Orders from "./pages/Orders/Orders";
 import Payment from "./pages/Payment/Payment";
 import Results from "./pages/Results/Results";
-import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import ProductDetail from "./pages/productDetail/ProductDetail";
 import NotFound from "./pages/NotFound/NotFound";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
